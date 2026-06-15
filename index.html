@@ -26,6 +26,7 @@
       <li><a href="#hero" class="nav-link">Home</a></li>
       <li><a href="#activity" class="nav-link">Activity</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
       <li><a href="#services" class="nav-link">Services</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
@@ -383,6 +384,71 @@
     </div>
   </section>
 
+  <!-- ───────────── GALLERY ───────────── -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Gallery</div>
+        <h2 class="section-title">Moments of<br /><em>action &amp; innovation.</em></h2>
+        <p class="section-desc">Behind the scenes at Hanna Secru &amp; Solutions — from the war room to the global stage.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-up" id="gal-1">
+          <div class="gallery-img-wrap">
+            <img src="assets/gallery_team.png" alt="War Room Collaboration" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🔍</span>
+              <div class="gallery-text">
+                <h3>War Room Collaboration</h3>
+                <p>Team discussing real-time threat intelligence and vulnerability responses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-up delay-1" id="gal-2">
+          <div class="gallery-img-wrap">
+            <img src="assets/gallery_keynote.png" alt="Global Tech Keynote" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🔍</span>
+              <div class="gallery-text">
+                <h3>Global Tech Keynote</h3>
+                <p>Presenting next-generation digital defense frameworks at the Global Innovation Summit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-up delay-2" id="gal-3">
+          <div class="gallery-img-wrap">
+            <img src="assets/gallery_workspace.png" alt="Innovation HQ Workspace" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🔍</span>
+              <div class="gallery-text">
+                <h3>Innovation HQ Workspace</h3>
+                <p>Sleek design workstation where strategic digital platforms and architectures are built.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-up" id="gal-4">
+          <div class="gallery-img-wrap">
+            <img src="assets/gallery_boardroom.png" alt="Security Strategy Boardroom" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">🔍</span>
+              <div class="gallery-text">
+                <h3>Security Strategy Boardroom</h3>
+                <p>Aligning growth metrics and enterprise security protocols with international partners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ───────────── SERVICES ───────────── -->
   <section class="services-section" id="services">
     <div class="container">
@@ -698,6 +764,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- ───────────── LIGHTBOX MODAL ───────────── -->
+  <div class="lightbox" id="lightboxModal">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Lightbox View" />
+      <div class="lightbox-caption" id="lightboxCaption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+    <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
